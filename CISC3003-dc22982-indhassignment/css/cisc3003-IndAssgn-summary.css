@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.page-header {
+    background-color: #27ae60;
+    color: white;
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.breadcrumb a {
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+}
+
+.breadcrumb {
+    margin-bottom: 10px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+}
+
+/* Summary Sections */
+.summary-section {
+    margin-bottom: 50px;
+}
+
+.summary-section h2 {
+    color: #27ae60;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #27ae60;
+}
+
+.content-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.content-box h3 {
+    color: #2c3e50;
+    margin: 25px 0 15px;
+    font-size: 1.3rem;
+}
+
+.content-box h3:first-child {
+    margin-top: 0;
+}
+
+.content-box ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.content-box li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.content-box p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .content-box {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 01: AI Face Capture System</title>
+    <link rel="stylesheet" href="css/cisc3003-IndAssgn-demo01.css">
+</head>
+<body>
+    <header class="demo-header">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="cisc3003-IndAssgn.html">Home</a> / 
+                <a href="cisc3003-IndAssgn-projects.html">Projects</a> / Demo 01
+            </nav>
+            <h1>AI Face Capture & Recognition System</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="demo-intro">
+            <h2>Project Overview</h2>
+            <p>This system was developed during my internship at Shanghai Media Technology Co. LTD. It focuses on real-time face capture and recognition for media broadcasting applications, featuring optimized algorithms for improved accuracy and processing speed.</p>
+            
+            <div class="tech-stack">
+                <h3>Technology Stack</h3>
+                <div class="tech-tags">
+                    <span class="tech">Python</span>
+                    <span class="tech">Computer Vision</span>
+                    <span class="tech">OpenCV</span>
+                    <span class="tech">Deep Learning</span>
+                    <span class="tech">Multimodal AI</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-interface">
+            <h2>System Interface Demo</h2>
+            <div class="system-container">
+                <div class="camera-feed">
+                    <div class="feed-header">
+                        <h3>Live Face Capture Feed</h3>
+                        <span class="status active">● Recording</span>
+                    </div>
+                    <div class="video-placeholder">
+                        <div class="face-overlay">
+                            <div class="face-box" style="top: 30%; left: 35%; width: 30%; height: 40%;">
+                                <span class="confidence">98% Match</span>
+                                <div class="landmarks">
+                                    <div class="landmark" style="top: 30%; left: 30%;"></div>
+                                    <div class="landmark" style="top: 30%; left: 70%;"></div>
+                                    <div class="landmark" style="top: 60%; left: 50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="feed-note">Simulated Camera Feed with Face Detection Overlay</p>
+                    </div>
+                    <div class="feed-controls">
+                        <button class="control-btn">Start Capture</button>
+                        <button class="control-btn">Stop</button>
+                        <button class="control-btn">Settings</button>
+                    </div>
+                </div>
+
+                <div class="analysis-panel">
+                    <h3>Real-time Analysis</h3>
+                    <div class="metric">
+                        <span class="metric-label">Processing FPS:</span>
+                        <span class="metric-value">30.5 fps</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Detection Accuracy:</span>
+                        <span class="metric-value">98.2%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Latency:</span>
+                        <span class="metric-value">&lt; 50ms</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Faces Detected:</span>
+                        <span class="metric-value">1</span>
+                    </div>
+                    <div class="exception-log">
+                        <h4>Exception Monitor</h4>
+                        <div class="log-entry success">System initialized successfully</div>
+                        <div class="log-entry info">Face detected: ID_2847</div>
+                        <div class="log-entry success">Tracking locked</div>
+                    </div>
+                </div>
+            </div>
+            <p class="demo-note">* This is a static demo interface showcasing the system design developed during my internship.</p>
+        </section>
+
+        <section class="demo-features">
+            <h2>Key Features & Contributions</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>Exception Code Analysis</h4>
+                    <p>Developed systematic debugging approach to identify root causes of algorithm failures, improving system stability by 35%.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Real-time Optimization</h4>
+                    <p>Optimized face capture algorithms to achieve 30+ FPS with 98%+ accuracy, suitable for live broadcasting environments.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Multimodal Integration</h4>
+                    <p>Integrated face recognition with other media data sources for comprehensive content analysis in TV production.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Technical Documentation</h4>
+                    <p>Authored detailed technical reports and progress documentation for team knowledge sharing and project tracking.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-architecture">
+            <h2>Technical Architecture</h2>
+            <div class="architecture-diagram">
+                <div class="arch-layer">
+                    <div class="arch-box">Camera Input / Video Stream</div>
+                </div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer">
+                    <div class="arch-box">Face Detection (OpenCV + DNN)</div>
+                </div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer">
+                    <div class="arch-box">Feature Extraction & Analysis</div>
+                </div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer dual">
+                    <div class="arch-box">Recognition Database</div>
+                    <div class="arch-box">Exception Handler</div>
+                </div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer">
+                    <div class="arch-box">Output / Broadcasting System</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>CISC3003 Web Programming - 2025: dc229823 + Yujie YANG</p>
+            <p>Project Demo 01: AI Face Capture System (Shanghai Media Technology Internship)</p>
+        </div>
+    </footer>
+</body>
+</html>
