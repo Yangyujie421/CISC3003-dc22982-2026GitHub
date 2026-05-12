@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS examC CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE examC;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL,
+    email VARCHAR(120) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    is_verified TINYINT(1) NOT NULL DEFAULT 0,
+    token VARCHAR(255),
+    reset_token VARCHAR(255),
+    reset_expires DATETIME,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS examB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE examB;
+
+CREATE TABLE IF NOT EXISTS contact_messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sender_name VARCHAR(100) NOT NULL,
+    sender_email VARCHAR(120) NOT NULL,
+    subject VARCHAR(150) NOT NULL,
+    message TEXT NOT NULL,
+    mail_status VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
